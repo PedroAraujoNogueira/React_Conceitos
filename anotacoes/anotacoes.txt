@@ -1,0 +1,44 @@
+1. npx é um comando que vai se encarregar de baixar uma dependência que vamos usar de forma temporária, sem que 
+precisemos instalar essa dependência de forma global. O npx também se encarrega de remover a dependência depois de 
+usarmos para não ocuparmos espaço com dependências que não precisamos.  
+
+2. npx create-react-app fundamentos-react
+Esse é um comando usado somente para criar um projeto, então, como não usamos ele sempre não precisamos instalar de 
+forma global o create-react-app.
+
+3. A Biblioteca ReactDOM é usada para renderizar os elementos na tela.
+
+4. Os componentes são referenciados dentro do JSX como uma Tag.
+
+5. Para o React tanto faz se a extensão do arquivo é JSX ou JS, a única vantagem de usar a extensão JSX 
+é que podemos identificar o arquivo mais facilmente como sendo um arquivo que manipula Javascript e HTML
+e também a IDE pode ter beneficios como auto completes exclusivos para a extensão JSX.
+
+6. As propriedades são somente leitura, logo não podem ser alteradas pelo componente.
+
+7. A tag <React.Fragment></React.Fragment>(ou somente <></>) serve para encapsular várias tags, fazendo com que não ocorra 
+um erro comum no React que acontece quando tentamos retornar dois ou mais elementos sem que eles estejam envolvidos por uma tag,
+pode ser uma div ou qualquer outra tag, ou a tag mostrada acima.
+
+8. Em JavaScript, tanto arrays, quanto funções, quanto classes são considerados objetos.
+
+9. Warning: Each child in a list should have a unique "key" prop. Esse erro acontece quando não temos uma key unica para cada elemento 
+de uma lista.
+Para que serve a key?
+A partir da key o React será capaz de detectar, mais rapidamente, as eventuais mudanças que possam acontecer em um elemento de uma 
+lista. Caso não coloquemos key para os elementos da lista o React continuará funcionando, porém de forma mais lenta e menos otimizada.
+
+10. Antes da versão 16.8 do React não era possível termos estado em um componente funcional, somente componentes baseados em classes podiam 
+ter estado. A partir do React 16.8 surgiram os React Hooks. Os React Hooks foram introduzidos com o objetivo principal de permitir que os 
+componentes funcionais do React gerenciem seu próprio estado interno, sem a necessidade de converter esses componentes em classes. Antes dos Hooks, 
+os componentes funcionais eram usados principalmente para apresentar dados, enquanto os componentes de classe eram usados para gerenciar o estado 
+e o ciclo de vida dos componentes.
+Com os Hooks, os componentes funcionais agora podem usar recursos avançados, como state, context e efeitos, permitindo que esses componentes 
+tenham um comportamento semelhante aos componentes de classe. Isso significa que, ao usar os Hooks, você pode escrever componentes mais simples e 
+legíveis, sem sacrificar recursos ou funcionalidades importantes.
+
+11. Nunca as alterações vem da interface gráfica para os dados, é sempre dos dados para a interface gráfica.
+
+12. com a introdução dos Hooks no React, a distinção entre componentes funcionais e componentes de classe ficou menos clara, uma vez que os Hooks
+permitem que os componentes funcionais gerenciem seu próprio estado interno e definam seus próprios métodos de ciclo de vida. Apesar de serem bem 
+parecidos, as componentes de classes ainda tem alguns ciclos de vida que os componentes funcionais não possuem.
